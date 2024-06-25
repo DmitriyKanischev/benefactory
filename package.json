@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitriy Kanischev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.3"
+  }
 }
