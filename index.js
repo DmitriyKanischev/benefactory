@@ -91,22 +91,48 @@ const fetchData = async () => {
   // yearSaleBonus - итоговое вознаграждение
   document.querySelector("#yearSaleBonus").textContent = total.toLocaleString('ru-RU') + ' ₽';
 
-  // const colors = ['#004C96', '#F0AB00', '#25858D', '#D0006F', '#830051']
+  const colors = ['#004C96', '#F0AB00', '#25858D', '#D0006F', '#830051']
+  const randColor = (colorArr) => {
+    return Math.floor(Math.random() * ((colorArr.length - 1)- 0 + 1)) + 0
+  }
 
-  // const createDiagramm = () => {
-  //   let totalDiagramm = document.body.querySelector("#total_diagramm");
-  //   data.sales.map((i) => {
-  //     totalDiagramm.insertAdjacentHTML('beforeend', 
-  //       `
-  //       <svg width="152" height="36" viewBox="0 0 152 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-  //         <rect width="152" height="36" fill="blue" />
-  //         <text class="rect_text" x="68" y="22">${i.saleBonus.toLocaleString('ru-RU', {minimumFractionDigits: 2})}</text>
-  //       </svg>
-  //       `
-  //     )
-  //   })
-  // }
-  // createDiagramm()
+  const createDiagramm = () => {
+    let ctx = [];
+    data.sales.map((i) => {
+      ctx.push({
+        name: i.name,
+        saleBonus: i.saleBonus
+      })
+    });
+    ctx = ctx.sort((a, b) => {
+      return b - a;
+    });
+
+    let totalDiagramm = document.body.querySelector("#total_diagramm");
+    let values = document.body.querySelector("#values");
+    ctx.map((i) => {
+      let color = randColor(colors);
+      totalDiagramm.insertAdjacentHTML('beforeend', 
+        `
+        <svg width="152" height="36" viewBox="0 0 152 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="152" height="36" fill="${colors[color]}" />
+          <text class="rect_text" x="38%" y="22">${i.saleBonus.toLocaleString('ru-RU', {minimumFractionDigits: 2})}</text>
+        </svg>
+        `
+      );
+      values.insertAdjacentHTML('beforeend',
+        `
+        <span class="values_name">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="19" height="19" fill="${colors[color]}"/>
+        </svg>
+        <p>${i.name}</p>
+        </span>
+        `
+      )
+    })
+  }
+  createDiagramm()
 }
 
 fetchData()
