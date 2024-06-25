@@ -1,0 +1,104 @@
+{
+  "period": "1 квартал 2023 год",
+  "manager": "Чехов Анастасий Кузьмич",
+  "pos": "KAS",
+  "line": "CV_HF_MR",
+  "nonSales": [
+      {
+          "fact": 91,
+          "isOK": true,
+          "scale": "TCFA A/B",
+          "percent": 90
+      },
+      {
+          "fact": 99,
+          "isOK": true,
+          "scale": "% визитов с вкл. GPS",
+          "percent": 90
+      },
+      {
+          "fact": 99,
+          "isOK": true,
+          "scale": "GPS_% визитов без отклонений",
+          "percent": 90
+      }
+  ],
+  "saleBonus": 170000,
+  "employee": "Игошева Хана Алексеевна",
+  "percent": 151.61,
+  "others": [
+      {
+          "bonus": 100,
+          "isOK": true,
+          "scale": "Compliance"
+      },
+      {
+          "bonus": 100,
+          "isOK": true,
+          "scale": "Road accidents"
+      },
+      {
+          "bonus": 100,
+          "isOK": true,
+          "scale": "Процент занятости"
+      }
+  ],
+  "sales": [
+      {
+          "fact": 2523024,
+          "bonus": 187.3,
+          "name": "Верба, Retail, N",
+          "saleBonus": 18730,
+          "weight": 10,
+          "done": 131,
+          "plan": 1924782
+      },
+      {
+          "fact": 10235971,
+          "bonus": 199.3,
+          "name": "Basket (Верба), Total, N",
+          "saleBonus": 59790,
+          "weight": 30,
+          "done": 149,
+          "plan": 6882752
+      },
+      {
+          "fact": 5086868,
+          "bonus": 65,
+          "name": "Basket (Алоэ, Роза), Retail, N",
+          "saleBonus": 6500,
+          "weight": 10,
+          "done": 95,
+          "plan": 5337340
+      },
+      {
+          "fact": 15322839,
+          "bonus": 183.3,
+          "name": "Basket (Верба, Алоэ, Роза), Total, N",
+          "saleBonus": 54990,
+          "weight": 30,
+          "done": 125,
+          "plan": 12220092
+      },
+      {
+          "fact": 7095,
+          "bonus": 58,
+          "name": "POS, POS, N",
+          "saleBonus": 11600,
+          "weight": 20,
+          "done": 93,
+          "plan": 7666
+      },
+      {
+          "fact": 5.25,
+          "bonus": 100,
+          "name": "Growth Component, Growth Component, N",
+          "saleBonus": 0,
+          "weight": 0,
+          "done": 5250,
+          "plan": 0.1
+      }
+  ],
+  "info": "Рады приветствовать вас в новой, более простой и понятной системе расчета бонусов на базе платформы Benefactory! \nКаждый из нас день за днем вносит свой вклад в нашу общую цель – делать жизнь пациентов лучше. Мы хотим, чтобы этот вклад был оценен по достоинству!",
+  "saleBonusFin": 151610
+}

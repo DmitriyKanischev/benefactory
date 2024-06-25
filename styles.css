@@ -1,0 +1,363 @@
+/* reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    color: #3F4444;
+}
+
+/* ------------------------------------------ header -------------------------------------------*/
+
+.header {
+  height: 30rem;
+  background-color: #C4D600; 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header_text-section {
+  width: 47.5rem;
+  text-align: left;
+}
+.header_button-section {
+  height: 100%
+}
+.header_title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.95px;
+  margin-bottom: 28px;
+}
+.header_subtitle {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.38px;
+  color: #D0006F;
+  margin-bottom: 28px;
+}
+.header_paragrpah {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 28px;
+
+}
+.header_paragrpah_detail {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 28px;
+
+}
+.header_detail {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: #D0006F;
+}
+.header_download {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  background: transparent;
+  cursor: pointer;
+  color: #D0006F;
+  padding-top: 4.5rem;
+}
+
+/* ------------------------------------------ main -------------------------------------------*/
+
+main {
+  height: 100%;
+  padding-bottom: 75px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.employee-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+.employee-table {
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+}
+.employee-table_row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.employee-table_title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  border-bottom: 1px solid rgba(213, 216, 223, 0.4); 
+}
+.employee-table_col {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  border-bottom: 1px solid rgba(213, 216, 223, 0.4); 
+  white-space: nowrap;
+}
+.employee-bonus {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.employee-bonus-title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.95px;
+  text-align: left;
+  color: #D0006F;
+}
+.employee-bonus-title ~ .employee-bonus-title {
+  margin-top: 20px;
+}
+.employee-bonus-desc {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  text-align: left;
+  color: #3F4444;
+  margin-top: 0.5rem;
+}
+.employee-diagramm {
+  margin-left: 6.8rem;
+}
+.employee-diagramm_scale {
+  display: flex;
+  flex-direction: row;
+}
+.employee-diagramm_numbers {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: right;
+  color: #3F4444;
+  display: flex;
+  flex-direction: column;
+}
+.employee-diagramm_blocks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1rem;
+}
+.total_diagramm {
+  position: absolute;
+  width: 245px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 550px;
+  bottom: 18px;
+}
+.rect_text{
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  fill: #FFFFFF;
+}
+.employee-diagramm_values {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3.2rem;
+}
+.employee-diagramm_goal {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0.7rem;
+}
+.employee-diagramm_goal-sum {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #D0006F;
+}
+.employee-diagramm_goal-desc {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.63px;
+  text-align: left;
+  color: #D0006F;
+}
+.employee-diagramm_goal-svg {
+  position: absolute;
+  right: -5px;
+  bottom: -10px;
+}
+.quart_sum {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  text-align: center;
+  color: #3F4444;
+  margin-left: 8rem;
+}
+.tables {
+  display: flex;
+  width: 60rem;
+}
+.table-section {
+  background-color: #EAEBEF;
+  min-height: 1018px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4.2rem;
+}
+.table-conditions {
+  display: flex;
+  flex-direction: column;
+}
+.table-conditions-title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #830051;
+}
+.table-conditions-table {
+  width: 30rem;
+  border-collapse: collapse;
+}
+.table-title_td {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #3F4444;
+}
+.table-title_th {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #3F4444;
+}
+.table-conditions-table td, th {
+  border-bottom: 1pt solid rgba(213, 216, 223, 0.4);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.table-conditions-table td:nth-child(even), th:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.table-scheme {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.table-scheme-title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #25858D;
+}
+.table-scheme-table {
+  flex: 1;
+  border-collapse: collapse;
+}
+.table-scheme-table td, th {
+  border-bottom: 1pt solid rgba(213, 216, 223, 0.4);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.table-scheme-table td:nth-child(even), th:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.total {
+  font-family: Montserrat !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 36px !important;
+  color: #3F4444 !important;
+}
+.details {
+  margin-top: 3rem;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #3F4444;
+  width: 21rem;
+}
+
+/* ------------------------------------------ footer -------------------------------------------*/
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: #3F4444;
+}
